@@ -5,94 +5,80 @@ File Name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, h2 {
+body, header, nav, main, footer, h1, h2, ul, li {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Style rules for body and header content */
+/* Style rules for body */
 body {
-    background-color: #d9d9d9;
+    padding: 2%;
+    background-color: #d1d1e0;
 }
 
-header, footer {
-    padding: 2%;
+/* Style rules for header */
+/* Header */
+header {
     text-align: center;
 }
 
-/* Style rules for main content */
+header h1 {
+    font-size: 3em;
+    font-family: Georgia, Times, serif;
+    padding: 3%;
+    color: #47476b;
+}
+
+/* Style rules for nav */
+/* Nav */
+nav {
+    background-color: #47476b;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #e3eaf8;
+    padding: 0.5em 2em;
+}
+
+/* Style rules for main */
+/* Main */
 main {
     padding: 2%;
-    overflow: auto;
+    font-family: Geneva, Arial, sans-serif;
+    overflow: auto; /* Updated to set overflow property to auto */
 }
 
 main p {
     font-size: 1.25em;
-    padding: 2%;
 }
 
-main a {
-    color: #0000b3;
-    text-decoration: none;
+main h3 {
+    padding-top: 2%;
+    font-size: 2em;
 }
 
-#orange, #purple, #green {
-    display: block;
-    margin-bottom: 2%;
+/* Style rules for footer */
+/* Footer */
+footer {
     text-align: center;
-    width: 33%;
-    float: left;
+    font-size: 0.85em;
+    color: #47476b;
+    padding: 1% 0;
+    border-top: 3px solid #47476b;
+    clear: left; /* Updated to clear float on the left */
 }
 
-#questions {
-    clear: left;
-}
-
-.box {
-    height: 100px;
-    width: 100px;
-    border: 1px solid #000;
-    display: inline-block;
-    padding-top: 5%;
-}
-
-/* Orange */
-.orange-hex {
-    background-color: #ff7f00; /* Hexadecimal color value */
-}
-
-.orange-rgb {
-    background-color: rgb(255, 127, 0); /* RGB color value */
-}
-
-.orange-hsl {
-    background-color: hsl(30, 100%, 50%); /* HSL color value */
-}
-
-/* Purple */
-.purple-hex {
-    background-color: #800080; /* Hexadecimal color value */
-}
-
-.purple-rgb {
-    background-color: rgb(128, 0, 128); /* RGB color value */
-}
-
-.purple-hsl {
-    background-color: hsl(300, 100%, 25%); /* HSL color value */
-}
-
-/* Green */
-.green-hex {
-    background-color: #008000; /* Hexadecimal color value */
-}
-
-.green-rgb {
-    background-color: rgb(0, 128, 0); /* RGB color value */
-}
-
-.green-hsl {
-    background-color: hsl(120, 100%, 25%); /* HSL color value */
-}
 
